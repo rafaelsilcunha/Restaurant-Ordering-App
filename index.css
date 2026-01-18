@@ -1,3 +1,97 @@
 body {
     margin: 0;
+    width: 600px;
+    height: 1161px;
+    font-family: "Smythe", serif;
+    border: 1px solid black;
 } 
+
+p {
+    margin: 0;
+}
+
+.app-header {
+    display: flex;
+    height: 167px;
+    width: 100%;
+    background-image: url("./images/headerbg.png");
+    margin-bottom: 40px;
+
+}
+
+
+.header-text{
+    margin: auto auto auto 46.07px;
+    color: white;
+    position: relative;
+    bottom: 25px;
+
+}
+
+.header-text h1 {
+    font-size: 39;
+    line-height: 24px;
+}
+
+.header-text p {
+    font-size: 22.42px;
+    line-height: 13.8px;
+}
+
+.item-container {
+    height: 140px;
+    width: 508px;
+    color: #000000;
+    display: flex;
+    margin: auto auto ;
+    align-items: center;
+    justify-content: start;
+    border-bottom: 1px solid #D2D2D2;
+
+}
+
+.item-description-container{
+    margin-left: 25px;
+}
+
+.item-title {
+    font-size: 28px;
+    line-height: 16.8px;
+    margin-bottom: 10px;
+
+}
+
+.item-description {
+    font-size: 16px;
+    color: #8B8B8B;
+    line-height: 24px;
+}
+
+.item-img {
+    width: 70px;
+    height: 89px;
+    line-height: 24px;
+}
+
+.item-price {
+    font-size: 20px;
+    margin-top: 10;
+}
+
+.add-btn{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1.5px solid #DEDEDE;
+    color: #3C3C3C;
+}
+
+.add-btn-div {
+    margin-left: auto;
+    
+}
+
+.checkout-Section {
+    width: 508px;
+    height: 319px;
+}
