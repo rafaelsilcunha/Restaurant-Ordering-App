@@ -24,3 +24,4 @@ export const menuArray = [
         image: "./images/beerimg.png"
     }
 ]
+
