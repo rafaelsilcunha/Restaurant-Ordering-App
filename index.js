@@ -1,7 +1,7 @@
 import { menuArray } from "./data.js";
 const menuItems = document.querySelector(".menu-items")
-const checkoutSection = document.querySelector(".checkout-Section")
-
+const foodOrder = document.querySelector(".food-order")
+const checkoutContainer = document.querySelector(".checkout-container")
 
 
 function renderMenu(){
@@ -27,7 +27,7 @@ renderMenu()
 const selectedOrder = []
 
 function renderOrder() {
-    checkoutSection.innerHTML = `
+    foodOrder.innerHTML = `
         <div class="food-order-item">
             <p>Your Order</p>
 
@@ -48,7 +48,9 @@ function getFoodObj (foodId){
 document.addEventListener("click", function(e){
     if(e.target.dataset.id){
         getFoodObj(e.target.dataset.id)
+        checkoutContainer.style.display = "flex"
     }
+
 })
 
 

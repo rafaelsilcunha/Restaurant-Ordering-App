@@ -84,6 +84,7 @@ p {
     border-radius: 50%;
     border: 1.5px solid #DEDEDE;
     color: #3C3C3C;
+    cursor: pointer;
 }
 
 .add-btn-div {
@@ -97,7 +98,7 @@ p {
 }
 
 .checkout-container {
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 508px;
     height: 319px;
@@ -123,6 +124,7 @@ p {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 3px;
-    border: none
+    border: none;
+    cursor: pointer;
 
 }
