@@ -4,6 +4,7 @@ body {
     height: 1161px;
     font-family: "Smythe", serif;
     border: 1px solid black;
+    position: relative;
 } 
 
 p {
@@ -148,6 +149,11 @@ p {
     margin-top: auto;
 }
 
+#complete-btn {
+    color: white;
+    font-weight: bold;
+}
+
 .order-list {
     max-height: 100px;
     overflow-y: auto;
@@ -167,4 +173,75 @@ p {
 
 hr{
     border: 1px solid black;
+}
+
+/* PAYMENT MODAL */
+
+.payment-modal-container {
+    width: 524px;
+    height: 542.24px;
+    position: absolute;
+    margin: auto;
+    align-items: center;
+    top: 25%;
+    left: 5%;
+    display: none;
+    flex-direction: column;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: 4px 4px 4px;
+}
+
+.payment-modal-container p {
+    margin-top: 47.32px;
+    font-weight: bold;
+}
+
+.payment-modal {
+    display: flex;
+    flex-direction: column;
+    margin-top: 46.07px;
+}
+
+.payment-modal input {
+    width: 475.91px;
+    height: 71.3px;
+    font-size: 20px;
+    color: #757575;
+    padding: 10px 30px;
+    border-radius: 3.89px;
+    border: 1px solid #757575;
+    margin-bottom: 23.22px;
+}
+
+#pay-btn {
+    width: 475.91px;
+    height: 71.3px;
+    background-color: #16DB99;
+    color: white;
+    border-radius: 3.89px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* ORDER COMPLETE */
+
+.order-complete{
+    margin: 45px auto auto auto;
+    width: 504px;
+    height: 120px;
+    background-color: #ECFDF5;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-complete-txt{
+    color: #065F46;
+    font-size: 32px;
+
 }

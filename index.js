@@ -5,6 +5,7 @@ const checkoutContainer = document.querySelector(".checkout-container")
 const totalPrice = document.querySelector("#total-price-value")
 
 
+
 // function to render the available menu. iterates over menuArray and 
 // uses object deconstruction to have those properties available to us.
 // avoids using item.name, item.ingredients and so on...
@@ -111,6 +112,33 @@ document.addEventListener("click", function(e){
         }
    }
 })
+
+//CHECKOUT PAYMENT MODAL APPEARING
+
+const completeOrder = document.querySelector("#complete-btn")
+const paymentModal = document.querySelector(".payment-modal-container")
+
+completeOrder.addEventListener("click", function(){
+    checkoutContainer.style.display = "none"
+    paymentModal.style.display = "flex"
+})
+
+// PAYMENT 
+
+const payBtn = document.getElementById("pay-btn")
+const orderFinished = document.querySelector(".order-complete")
+const orderFinishedText = document.querySelector(".order-complete-txt")
+paymentModal.addEventListener("submit", function(event){
+    const clientName = document.getElementById("name-input").value
+    event.preventDefault()
+    paymentModal.style.display = "none"
+    orderFinishedText.innerHTML = `Thanks, ${clientName}! Your order is on its way!`
+    orderFinished.style.display = "flex"
+    
+})
+
+// ORDER FINISHED
+
 
 
 

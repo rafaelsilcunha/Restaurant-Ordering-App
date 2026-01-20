@@ -33,8 +33,23 @@
                     <button id="complete-btn">Complete Order</button>
             </div>
         </section>
-
-	<script src="index.js" type="module"></script>
+        <section class="payment-modal-container">
+            <div>
+                <p>Enter card details</p>
+            </div>
+            <form class="payment-modal">
+                <input placeholder="Enter your name" type="text" name="name" id="name-input" required aria-label="Enter name">
+                <input placeholder="Enter card number"  pattern="^[0-9]+$" type="text" inputmode="numeric" name="cardnumber" id="card-number-input" required aria-label="Enter card number">
+                <input placeholder="Enter CVV" type="text" pattern="^[0-9]+$" inputmode="numeric" maxlength="3" name="cvv" id="cvv-input" required aria-label="Enter cvv">
+                <button id="pay-btn">Pay</button>
+            </form>
+        </section>
+        <section class="order-complete">
+            <div class="order-complete-txt">
+                
+            </div>
+        </section>
+    <script src="index.js" type="module"></script>
     </body>
 </html>
 
