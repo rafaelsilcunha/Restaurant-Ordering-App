@@ -3,7 +3,6 @@ body {
     width: 600px;
     height: 1161px;
     font-family: "Smythe", serif;
-    border: 1px solid black;
     position: relative;
     background: lightblue;
 } 
@@ -16,6 +15,8 @@ p {
     width: 600px;
     height: 1161px;
     background: white;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 .app-header {
@@ -23,7 +24,9 @@ p {
     height: 167px;
     width: 100%;
     background-image: url("./images/headerbg.png");
+    background-size: cover;
     margin-bottom: 40px;
+    border-radius: 10px;
 
 }
 
