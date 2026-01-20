@@ -1,14 +1,21 @@
 body {
-    margin: 0;
+    margin: auto;
     width: 600px;
     height: 1161px;
     font-family: "Smythe", serif;
     border: 1px solid black;
     position: relative;
+    background: lightblue;
 } 
 
 p {
     margin: 0;
+}
+
+.main-container {
+    width: 600px;
+    height: 1161px;
+    background: white;
 }
 
 .app-header {

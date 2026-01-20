@@ -6,49 +6,51 @@
         <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class="app-header">
-            <div class="header-text">
-                <h1>Rafael's Diner</h1>
-                <p>The best burgers and pizza's in town.</p>
-            </div>
-        </header>
-        <section class="menu-items">
-        
-        </section>
-        <section class="checkout-container">
-            <div class="checkout-info">
-                <p id="your-order-p">Your Order</p>
-                <div class="food-order">
-                    <div class="order-list">
-
-                    </div>                    
-                </div>                
-            </div>
-            <div class="complete-btn-div">
-                <hr>
-                <div class="total-price-container">
-                    <p>Total price:</p>
-                    <p>$<span id="total-price-value"></span></p>
+        <main class="main-container">
+            <header class="app-header">
+                <div class="header-text">
+                    <h1>Rafael's Diner</h1>
+                    <p>The best burgers and pizza's in town.</p>
                 </div>
-                    <button id="complete-btn">Complete Order</button>
-            </div>
-        </section>
-        <section class="payment-modal-container">
-            <div>
-                <p>Enter card details</p>
-            </div>
-            <form class="payment-modal">
-                <input placeholder="Enter your name" type="text" name="name" id="name-input" required aria-label="Enter name">
-                <input placeholder="Enter card number"  pattern="^[0-9]+$" type="text" inputmode="numeric" name="cardnumber" id="card-number-input" required aria-label="Enter card number">
-                <input placeholder="Enter CVV" type="text" pattern="^[0-9]+$" inputmode="numeric" maxlength="3" name="cvv" id="cvv-input" required aria-label="Enter cvv">
-                <button id="pay-btn">Pay</button>
-            </form>
-        </section>
-        <section class="order-complete">
-            <div class="order-complete-txt">
-                
-            </div>
-        </section>
+            </header>
+            <section class="menu-items">
+            
+            </section>
+            <section class="checkout-container">
+                <div class="checkout-info">
+                    <p id="your-order-p">Your Order</p>
+                    <div class="food-order">
+                        <div class="order-list">
+
+                        </div>                    
+                    </div>                
+                </div>
+                <div class="complete-btn-div">
+                    <hr>
+                    <div class="total-price-container">
+                        <p>Total price:</p>
+                        <p>$<span id="total-price-value"></span></p>
+                    </div>
+                        <button id="complete-btn">Complete Order</button>
+                </div>
+            </section>
+            <section class="payment-modal-container">
+                <div>
+                    <p>Enter card details</p>
+                </div>
+                <form class="payment-modal">
+                    <input placeholder="Enter your name" type="text" name="name" id="name-input" required aria-label="Enter name">
+                    <input placeholder="Enter card number"  pattern="^[0-9]+$" maxlength="16"  minlength="16" type="text" inputmode="numeric" name="cardnumber" id="card-number-input" required aria-label="Enter card number">
+                    <input placeholder="Enter CVV" type="text" pattern="^[0-9]+$" inputmode="numeric" maxlength="3"  minlength="3" name="cvv" id="cvv-input" required aria-label="Enter cvv">
+                    <button id="pay-btn">Pay</button>
+                </form>
+            </section>
+            <section class="order-complete">
+                <div class="order-complete-txt">
+                    
+                </div>
+            </section>
+        </main>
     <script src="index.js" type="module"></script>
     </body>
 </html>
